@@ -96,6 +96,11 @@ go run main.go
 ```
 http://127.0.0.1:9033/ncov/login
 ```
+用户名：admin（总管理员）
+密码：admin
+
+用户名：operator(管理员）
+密码：admin
 
 - 然后就开始开发吧！
 
