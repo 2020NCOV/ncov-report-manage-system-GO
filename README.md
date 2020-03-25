@@ -55,27 +55,32 @@
 
 - **Goland中导入该项目**
 
-- **修改main.go中的数据库配置信息**
+- **修改数据库配置信息**
+
+新建文件夹config.json，仿照config.example.json文件进行配置
 
 ```
-cfg := config.Config{
-		Databases: config.DatabaseList{
-			"default": {
-				Host:       "127.0.0.1",
-				Port:       "3306",
-				User:       "数据库用户名",
-				Pwd:        "用户密码",
-				Name:       "数据库名",
-				MaxIdleCon: 50,
-				MaxOpenCon: 150,
-				Driver:     config.DriverMysql,
-			},
-		},
-		...
-		...
-	}
+{
+  "database": {
+    "default": {
+      "host": "127.0.0.1",
+      "port": "3306",
+      "user": "数据库用户名",
+      "pwd": "用户密码",
+      "name": "数据库名",
+      "max_idle_con": 50,
+      "max_open_con": 150,
+      "driver": "mysql"
+    }
+  },
+  "prefix": "ncov",  //注意此处改为ncov,为网站前缀：http://127.0.0.1:9033/ncov/...
+  "store": {
+    "path": "./uploads",
+    "prefix": ""
+  },
+  "language": "en"
+}
 ```
-
 
 
 - **将database文件夹中的.sql文件导入数据库中**
