@@ -14,7 +14,7 @@
   "prefix": "admin",
   "store": {
     "path": "./uploads",
-    "prefix": "uploads"
+    "prefix": ""
   },
   "language": "en"
 }

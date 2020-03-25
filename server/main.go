@@ -9,5 +9,7 @@ func Router() *gin.Engine {
 
 	r.GET("/ncov", WhiteList)
 
+	r.Static("/uploads", "./uploads")
+
 	return r
 }
