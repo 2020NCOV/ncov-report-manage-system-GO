@@ -14,11 +14,11 @@
   "prefix": "ncov",
   "store": {
     "path": "./uploads",
-    "prefix": ""
+    "prefix": "uploads"
   },
   "language": "en",
   "title": "疫情上报系统",
   "login_title": "疫情上报系统",
-  "logo": "<p2><b>N</b>COV<p2>",
-  "mini_logo": "<p2><b>N</b>C<p2>"
+  "logo": "<b>N</b>COV",
+  "mini_logo": "<b>N</b>C"
 }
