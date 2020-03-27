@@ -8,6 +8,7 @@ import (
 	"github.com/GoAdminGroup/go-admin/plugins/admin"
 	"github.com/GoAdminGroup/go-admin/template"
 	_ "github.com/GoAdminGroup/themes/adminlte" // 引入主题，必须引入，不然报错
+	"ncov-report-manage-system-GO/controller/template/login"
 	"ncov-report-manage-system-GO/model"
 	"ncov-report-manage-system-GO/server"
 )
@@ -41,6 +42,9 @@ func main() {
 	if err := eng.AddConfig(cfg).AddPlugins(adminPlugin).Use(r); err != nil {
 		panic(err)
 	}
+
+	//增加登录模块,不写时有默认的登录页面，可在本项目中自定义登录页面，在此处加入
+	template.AddLoginComp(login.GetLoginComponent())
 
 	//监听端口9033
 	_ = r.Run(":9033")
