@@ -9,7 +9,9 @@ func Router() *gin.Engine {
 
 	r.GET("/ncov", WhiteList)
 
+	//获取静态资源
 	r.Static("/uploads", "./uploads")
+	r.Static("/static", "./static")
 
 	return r
 }
