@@ -76,9 +76,13 @@
   "prefix": "ncov",  //注意此处改为ncov,为网站前缀：http://127.0.0.1:9033/ncov/...
   "store": {
     "path": "./uploads",
-    "prefix": ""
+    "prefix": "uploads"
   },
   "language": "en"
+  "title": "ncov",
+  "login_title": "疫情上报系统",
+  "logo": "<p2><b>N</b>COV<p2>",
+  "mini_logo": "<p2><b>N</b>C<p2>"
 }
 ```
 
