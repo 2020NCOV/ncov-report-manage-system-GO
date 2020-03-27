@@ -11,10 +11,12 @@
       "driver": "mysql"
     }
   },
-  "prefix": "admin",
+  "prefix": "ncov",
   "store": {
     "path": "./uploads",
     "prefix": ""
   },
-  "language": "en"
+  "language": "en",
+  "title": "ncov",
+  "login_title": "疫情上报系统"
 }
